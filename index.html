@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BleepCo.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      color: rgba(255,255,255,0.9);
+      background: linear-gradient(180deg, #D81F8F 0%, #8A8BB7 50%, #11DAC8 100%);
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container { padding: 2rem 1rem; }
+    .content { max-width: 700px; margin: 0 auto; }
+    header { text-align: center; }
+    nav { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+    nav a { opacity: 0.7; display: flex; align-items: center; gap: 0.25rem; }
+    nav a:hover { opacity: 1; }
+    .section {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(4px);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+    }
+    .footer { opacity: 0.8; font-size: 0.9rem; margin-top: 3rem; }
+    .copyright { text-align: center; font-size: 0.8rem; opacity: 0.7; margin-top: 2rem; }
+    .stream {
+      margin: 2rem auto;
+      aspect-ratio: 16/9;
+      background: rgba(255,255,255,0.1);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <header>
+        <p style="opacity:0.8; margin-bottom:0.5rem;">Listen to BleepCo.</p>
+        <nav>
+          <a href="https://www.youtube.com/channel/UCfYEOAAafWCmTyoMlV7zL_Q" target="_blank">YouTube</a>
+          <a href="#">Twitch</a>
+          <a href="#">Spotify</a>
+          <a href="#">Mixcloud</a>
+          <a href="https://www.instagram.com/bleepcompany" target="_blank">Instagram</a>
+        </nav>
+        <h1 style="font-size:3rem; font-weight:bold; margin:0.5rem 0;">BleepCo.</h1>
+        <p style="font-size:1.5rem;">– aka –</p>
+        <p style="font-size:2rem; margin: 1rem auto;">
+          can I build a 24/7 radio station (music, tools, even the presenter) using nothing but AI, with zero coding knowledge?
+        </p>
+        <div class="stream">
+          <span style="opacity:0.7;">[ 24/7 Stream Placeholder ]</span>
+        </div>
+        <p style="font-size:0.9rem; opacity:0.8; padding:0 20px; text-align:left;">
+          BTW, I’m not here to show off coding chops (don’t have any), I’m here to invite you to check out this thing I made with zero prior coding knowledge.
+        </p>
+      </header>
+
+      <section class="section">
+        <h2>Where it’s headed</h2>
+        <p>
+          Down the line, the idea is an <strong>autonomous media generating and distribution system</strong> [AMGD – pronounced “ahmahgawd”] that generates and plays original content nonstop.
+        </p>
+        <p style="margin-top:1rem;">
+          Not just playlists, but an ever-changing flow of music you’ve never heard before – in fact – you’ll actually be the first to ever hear it.
+        </p>
+      </section>
+
+      <section style="text-align:center; font-size:1.25rem; margin:2rem auto;">
+        <p>
+          Sure,<br/> you can go spin up AI music in minutes yourself <br/> but that's kind of a waste of time when <br/> BleepCo. can do it for you.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>ok cool... but why tho?</h2>
+        <p>
+          long story short, I listen to a lot of radio, both legacy and streaming, and I’m tired of hearing the same old shit all the time. Turns out, now I can do something about it.
+        </p>
+      </section>
+
+      <div class="copyright">© BleepCo. 2025</div>
+
+      <footer class="footer">
+        <p>
+          <strong>[info for nerds]</strong> — the setup’s cheap lo-tek: a modest box, some AI tools duct-taped together, and a bunch of improvised processes to keep it alive. If you code, it’ll probably make your eyes roll, cos this really isn’t about clever engineering (... or is it?)
+        </p>
+        <ul>
+          <li>Raspberry Pi 3B+ — 1.4GHz quad-core ARM Cortex-A53, 1GB RAM.</li>
+          <li>Custom batch renaming + metadata embedding tool to keep the library neat.</li>
+          <li>Lightweight, low-load visualizer built for continuous streaming.</li>
+          <li>AI-driven content generator and scripting pipeline glued together with simple shell scripts.</li>
+          <li>Stream served via ffmpeg loop — nothing fancy, just sturdy.</li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
