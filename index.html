@@ -64,13 +64,28 @@
   display: block;
 }
 
+
 .about-box {
-  max-width: 620px;
-  margin: 0 auto 2rem;
+  width: 620px;         /* match Twitch embed width */
+  max-width: 100%;      /* prevent overflow on smaller screens */
+  margin: 0 auto 2rem;  /* center and space below */
 }
 .about-box h2 {
   text-align: center;
 }
+
+.about-box {
+  width: 620px;         /* match Twitch embed width */
+  max-width: 100%;      /* prevent overflow on smaller screens */
+  margin: 0 auto 2rem;  /* center and space below */
+}
+.about-box p {
+  margin: 0;            /* tighten top spacing */
+  font-size: 1.05rem;   /* readable, not huge */
+  line-height: 1.6;     /* comfortable reading */
+  text-align: left;     /* avoid awkward centering */
+}
+
 </style>
 </head>
 <body>
@@ -102,8 +117,7 @@ $$$$$$$  |$$ |\$$$$$$$\ \$$$$$$$\ $$$$$$$  |\$$$$$$  |\$$$$$$  |$$\
 </div></header>
 
       <section class="section about-box">
-  <h2>about</h2>
-  <p>BleepCo is a 24-hour internet radio station of human-produced, machine-powered music. Rooted in techno, house, vaporwave, hip hop, cosmic disco, kraut, funk, dub ... you know? left-field groovy shit ... we push the machine to create music that feels new, fresh, unpredictable and exciting (ie not mainstream radio).</p>
+    <p>BleepCo is a 24-hour internet radio station of human-produced, machine-powered music. Rooted in techno, house, vaporwave, hip hop, cosmic disco, kraut, funk, dub ... you know? left-field groovy shit ... we push the machine to create music that feels new, fresh, unpredictable and exciting (ie not mainstream radio).</p>
 </section>
 
       
