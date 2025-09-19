@@ -51,7 +51,19 @@
       overflow: auto;
     }
     header { text-align: center; }
-    </style>
+    
+.stream-frame {
+  display: inline-block;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background: #000;
+  margin: 0 auto 2rem;
+}
+.stream-frame iframe {
+  display: block;
+}
+</style>
 </head>
 <body>
   <div class="container">
@@ -77,8 +89,8 @@ $$$$$$$  |$$ |\$$$$$$$\ \$$$$$$$\ $$$$$$$  |\$$$$$$  |\$$$$$$  |$$\
                                   $$ |                              
                                   \__|                              
 
-</pre><div class="stream">
-  <iframe src="https://player.twitch.tv/?channel=bleepco&parent=bleepco.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+</pre><div class="stream-frame">
+  <iframe src="https://player.twitch.tv/?channel=bleepco&parent=bleepco.github.io" frameborder="0" allowfullscreen="true" scrolling="no" width="620" height="378"></iframe>
 </div></header>
 
       <section class="section">
